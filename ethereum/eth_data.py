@@ -1,5 +1,6 @@
-# ethereum.py
-# Getting some data from the Ethereum blockchain, including block size, gas, etc.
+# eth_data.py
+# Getting Block Size and Gas Used for Ethereum
+# Tool Used: Alchemy (Ethereum API)
 
 # Pertinent libraries
 from web3 import Web3
@@ -41,7 +42,7 @@ ax.stem(block_nums, sizes)
 plt.xlabel("Block Number")
 plt.ylabel("Block Size")
 plt.title("Block Size over time in Ethereum")
-plt.savefig('./img/block_size.png')
+plt.savefig('./img/eth_block_size.png')
 
 # Plot figure of gas
 fig, ax = plt.subplots()
@@ -51,4 +52,4 @@ ax.stem(block_nums, gas_used)
 plt.xlabel("Block Number")
 plt.ylabel("Gas Used")
 plt.title("Gas Used per Block over time in Ethereum")
-plt.savefig('./img/gas_used.png')
+plt.savefig('./img/eth_gas_used.png')
